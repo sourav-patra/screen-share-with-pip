@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #d4e8ff
+}
+
+video {
+  height: 360px;
+  width: 360px;
+  margin-bottom: 1.5rem;
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 50px;
+  font-size: 25px;
+  border: 2px solid #000;
+  background: linear-gradient(to top, #696969, #575757);
+  box-shadow: inset 0px 20px 4px -20px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgba(0,0,0,0.3);
+}
+
+.circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background: #ff3838;
+}
+
+.button-text {
+  color: #d4e8ff;
+  padding-left: 1rem;
+}
+
+.button-container {
+  display: flex;
+}
+#button-pip {
+  display: none;
+  color: #d4e8ff;
+  margin-left: 2rem;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #696969, #575757);
+}
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.3);
+}
+
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 56, 56, 0.3)
+  }
+  100% {
+    box-shadow: 0 0 0 1rem rgba(255, 56, 56, 0.3);
+  }
+}
